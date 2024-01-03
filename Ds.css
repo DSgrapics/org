@@ -1,0 +1,257 @@
+
+      
+        *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+          background-color: black;
+          width: 100vw;
+          height: 100vh;
+          z-index: 0;
+        }
+        h1,h2{
+          font-family: lobster;
+        }
+        h1{
+          z-index: 10;
+          margin-bottom: 5%;
+          font-size: 200%;
+          position: sticky;
+          top: 0px;
+          width: 100%;
+          height: 15%;
+          background-color: rgba(255,0,0,0.6);
+        }
+        h2{
+          font-size: 150%;
+          margin: 8%;
+        }
+        .sc{
+          width: 100%;
+          height: 100%;
+          margin-top: 8%;
+        }
+      
+        .img{
+          display: inline;
+          border: 1px thin red;
+          width: 90%;
+          height: 50%;
+        }
+        button{
+    
+          background: red;
+          border:1px solid red;
+          border-radius: 10px;
+          width: 70%;
+          height: 5vh;
+          font-size: 90%;
+          font-weight: bold;
+          margin: 2%;
+          display: block;
+        }
+       .learn{
+          display: inline;
+        }
+        a{
+          text-decoration: none;
+        }
+        footer{
+          margin-top: 12%;
+        }
+       
+        .alert{
+          position: absolute;
+          height: 0px;
+        }
+        p{
+          font-size: 80%;
+        }
+        .acc{
+          border: 1px solid white;
+          border-radius: 5%;
+          display: inline;
+        }
+        .bottom-stick{
+          margin: 0%;
+          padding: 2%;
+          position: sticky;
+          bottom: 0px;
+          height: 20%;
+          width: 100%;
+          background-color: rgba(255,0,0,0.5);
+          z-index: 10;
+        }
+        
+        .bottom-stick img{
+          border-radius: 50%;
+          width: 12%;
+          margin-left: 6%;
+          border:4px solid red;
+        }
+        
+        .rated {
+         position: absolute;
+         top: 114%;
+         width: 100%;
+         height: 90%;
+         overflow: hidden;
+        }
+      
+        #slide{
+          display: grid;
+          grid-template-columns: repeat(6,1fr);
+         position: relative;
+         left: 10%;
+         opacity: 0;
+         column-gap: 20%;
+         animation-name: slide ;
+         animation-duration: 60s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        }
+        
+@keyframes slide {
+  0% {
+    opacity: 0;
+    left: 10%;
+  }
+  6% {
+    opacity: 1;
+    left: 10%;
+  }
+  12% {
+    opacity: 1;
+    left: -95%;
+  }
+  14% {
+    opacity: 1;
+    left: -95%;
+  }
+  20% {
+    opacity: 1;
+    left: -200%;
+  }
+  22% {
+    opacity: 1;
+    left: -200%;
+  }
+  28% {
+    opacity: 1;
+    left: -300%;
+  }
+  30% {
+    opacity: 1;
+    left: -300%;
+  }
+  36% {
+    opacity: 1;
+    left: -405%;
+  }
+  38% {
+    opacity: 1;
+    left: -405%;
+  }
+  44% {
+    opacity: 1;
+    left: -510%;
+  }
+  46% {
+    opacity: 1;
+    left: -510%;
+  }
+  52% {
+    opacity: 1;
+    left: -405%;
+  }
+  54% {
+    opacity: 1;
+    left: -405%;
+  }
+  60% {
+    opacity: 1;
+    left: -300%;
+  }
+  62% {
+    opacity: 1;
+    left: -300%;
+  }
+  70% {
+    opacity: 1;
+    left: -200%;
+  }
+  72% {
+    opacity: 1;
+    left: -200%;
+  }
+  80% {
+    opacity: 1;
+    left: -95%;
+  }
+  82% {
+    opacity: 1;
+    left: -95%;
+  }
+  90% {
+    opacity: 1;
+    left: 10%;
+  }
+  92% {
+    opacity: 1;
+    left: 10%;
+  }
+  100% {
+    opacity: 0;
+    left: 0%;
+  }
+}
+
+        #space{
+          height: 40vh;
+          display: block;
+        }
+        #message{
+         text-align: center;
+          background-color: red;
+          width: 70%;
+          height: 55%;
+          border-radius: 5%;
+          position: sticky;
+          top: -70%;
+          left: 15%;
+          color: white;
+          padding: 3%;
+          font-size: 100%;
+          box-shadow: 5px 5px 10px white, -5px -5px 10px white;
+          display: none;
+          z-index: 5;
+          animation-name: pop;
+          animation-duration: 0.5s;
+          animation-fill-mode: forwards;
+        }
+       
+        @keyframes pop{
+          from{
+            top: -70%;
+          }
+          to{
+            top: 14%;
+          }
+        }
+      #message a{
+    
+        font-size: 100%;
+        font-weight: bold;
+        color: skyblue;
+      }
+      #message h2{
+        
+        font-size: 150%;
+        text-align: center;
+      }
+
+     
